@@ -1,0 +1,9 @@
+{
+    "product": "SAP HANA",
+    "producer": "SAP CORP",
+    "version": "SP07",
+    "price": {
+        "amount": 9870,
+        "currency": "USD"
+    }
+}

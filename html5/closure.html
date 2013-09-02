@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Closure Demostration</title>
+</head>
+<body>
+
+
+
+<ul>
+	<li>First</li>
+	<li>Second</li>
+	<li>Third</li>
+	<li>Forth</li>
+	<li>Fifth</li>
+</ul>
+
+<script type="text/javascript">
+	
+	var lists = document.getElementsByTagName('li');
+
+	// for(var i = 0, length = lists.length; i < length; i++){
+	// 	var element = lists[i];
+	// 	element.addEventListener('click', function(event){
+	// 		console.log(i);
+	// 	},false);
+	// }
+
+	for(var i = 0, length = lists.length; i < length; i++){
+		var element = lists[i];
+		(function(index){
+			element.addEventListener('click', function(event){
+				console.log(index);
+			}, false);
+
+		})(i)
+	}
+
+
+</script>
+</body>
+</html>
