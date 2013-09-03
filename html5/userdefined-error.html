@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>User Defined Error</title>
+</head>
+<body>
+
+<form action="userdefined-error.html" method="post">
+	<label for="productId">Product ID</label>
+	<input type="text" name="productId" id="productId">
+	<button id="submit">Submit</button>
+</form>
+
+<script type="text/javascript">
+
+	function ProductNotFound(id){
+		alert("Product " + id + " not found");
+		console.log("Product " + id + " not found");
+	}
+
+	ProductNotFound.prototype = new Error();
+	ProductNotFound.prototype.constructor = ProductNotFound;
+	
+	var productId = document.getElementById('productId');
+
+	var submit = document.getElementById('submit');
+	submit.addEventListener('click', function(event){
+
+		event.preventDefault();
+
+		var pid = parseInt(productId.value);
+
+		if(pid < 100){
+			throw new ProductNotFound(pid);
+		}
+		console.log('Product found ' + pid);
+	},false);
+
+</script>
+	
+</body>
+</html>

@@ -9,8 +9,8 @@
 
 <script type="text/javascript">
 	
-	var myvar = 'my value';  
-	alert(myvar); // my value  
+	// var myvar = 'my value';  
+	// alert(myvar); // my value  
 
 
 	// var myvar = 'my value';  
@@ -18,15 +18,27 @@
 	// (function() {  
 	//   alert(myvar); // my value  
 	// })(); 
+	// 
+	// 
+	//
+	//
+	//
+	function outer(){
+		var outerVar = 100;
+
+		function inner(){
+			var innerVar = 200;
+			return innerVar + outerVar;
+		}
+
+		return inner;
 
 
-	// var myvar = 'my value';  
-	  
-	// (function() {  
-	//   alert(myvar); // undefined  
-	//   var myvar = 'local value';  
-	// })();  
+	}
 
+	var inner = outer();
+
+	console.log(inner);
 
 
 </script>	

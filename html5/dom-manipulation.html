@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>DOM Manipulation</title>
+</head>
+<body>
+
+<script type="text/javascript">
+	
+	var h1 = document.createElement('h1');
+	var text = document.createTextNode('Hello SAP');
+	h1.appendChild(text);
+	var body = document.getElementsByTagName('body')[0]
+	body.appendChild(h1);
+</script>
+	
+</body>
+</html>
