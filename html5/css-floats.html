@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS Floats</title>
+	<style>
+		.pull-left{
+			float:left;
+		}
+		.clear{
+			clear: both;
+		}
+
+		article{
+			border:2px solid green;
+		}
+
+		.container {
+		    overflow: hidden;
+		    display: inline-block; /* Necessary to trigger "hasLayout" in IE */
+		    display: block; /* Sets element back to block */
+		}
+
+
+		/*article:before, article:after{
+			content:"";
+			display: table;
+		}
+
+		article:after{
+			clear:both;
+		}*/
+
+		p{
+			border:1px solid tomato;
+			float:right;
+		}
+
+		img{
+			border:3px dotted #ccc;
+			width:400px;
+		}
+	
+	</style>
+</head>
+<body>
+
+	<article class="container">
+	
+		<img class="pull-left" src="img/Logo_SAP.gif" alt="SAP Logo">
+
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, laudantium, quia, porro molestias repellat impedit repellendus fugit nostrum facilis illum delectus qui perspiciatis. Dicta, est deleniti impedit ut tenetur quibusdam.
+
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, tempora, labore ipsum corporis earum dolore dicta dolores ex blanditiis molestias eum libero laborum accusamus eveniet porro voluptatem recusandae dignissimos ratione.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, cupiditate, assumenda nobis modi minima obcaecati qui ut saepe nemo quibusdam natus excepturi deserunt quam possimus voluptate mollitia ipsum! Adipisci, impedit.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, optio, assumenda nesciunt repellat eveniet dolores doloremque alias dolore voluptatibus expedita quo vel odio veritatis adipisci exercitationem velit dicta ullam maiores!
+
+
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, laudantium, repellat dolorum iure expedita quisquam non architecto neque nulla ipsa nisi repudiandae ullam distinctio impedit ipsam explicabo totam cumque labore!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, nesciunt, aliquid, reprehenderit possimus voluptatum rem perspiciatis ipsum aut officiis eos suscipit aliquam quasi neque. Minima, natus ut exercitationem explicabo suscipit.
+
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, dolorum ex fugit eum sint dignissimos reiciendis nesciunt nemo dolorem provident! Error, totam laboriosam delectus cum corporis excepturi corrupti et dolorum.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, dolor ipsam rerum error earum vitae dolorum corrupti veniam quasi ullam dolore tempore fuga adipisci nemo voluptate aut saepe consequuntur inventore.
+			
+		</p>
+		
+		
+
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, porro, adipisci, cumque architecto quaerat veniam eius explicabo natus maiores odit corporis eveniet vitae ut cupiditate aliquid sed iusto iste. Est.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, et, molestiae, dolores autem itaque nostrum repellat perspiciatis neque reiciendis quo illo nesciunt incidunt sequi inventore esse nisi illum expedita error!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, eligendi, repudiandae, debitis voluptates nobis vero minima consequatur tempora rem provident illo fugiat eaque tenetur optio autem odit error nam fuga.
+		</p>
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, tempora, iure, ab, amet explicabo mollitia voluptatem molestias autem quos fugiat qui vero optio ipsum odit vitae excepturi nam temporibus vel?</p>
+
+		<!-- <div class="clear"></div> -->
+	</article>
+	
+</body>
+</html>
